@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import Header from './components/Header'
+import Home from './components/Home';
+import {useState} from 'react'
+
 import './App.css';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
 
 function App() {
+  const [project, setProject] = useState(false)
+  const [skill, setSkill] = useState(false)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Home setProject={setProject} setSkill={setSkill} />
+      { project ? <Projects/> : null}
+      { skill ? <Skills/> : null}
     </div>
   );
 }

@@ -1,0 +1,23 @@
+.containSkills {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  font-size: 150%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.skillsLogo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.skillsImg {
+  width: 50px;
+}

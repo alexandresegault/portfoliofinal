@@ -1,0 +1,126 @@
+@keyframes slideRight {
+  from {
+    left: -120%;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes slideLeft {
+  from {
+    left: 0;
+  }
+  to {
+    left: -120%;
+  }
+}
+
+.visibleMenu {
+  animation: 0.5s slideRight ease-in forwards;
+  transition-delay: 0;
+}
+
+.invisibleMenu {
+  animation: 1s slideLeft ease-out forwards;
+  transition-delay: 0;
+}
+
+#menuPage {
+  position: absolute;
+  left: -120%;
+  /* width: 30vw; */
+  background: #242323;
+  z-index: 500;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgb(59, 58, 58);
+  transition: all 0.5s;
+}
+#menuPage a {
+  text-decoration: none;
+}
+.menuList {
+  list-style: none;
+}
+.logoBtn {
+  width: 20px;
+}
+.btnNav a {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+.btnNav {
+  border: 1px solid white;
+  color: white;
+  margin: 20px;
+  width: 100px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btnNav:hover,
+.btnNavSelected:hover {
+  opacity: 0.5;
+}
+.btnNavSelected {
+  background: white;
+  border: 1px solid white;
+  color: rgb(39, 39, 39);
+  margin: 20px;
+  width: 100px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.linkedin {
+  border: rgb(83, 83, 216) 1px solid;
+  background: rgb(83, 83, 216);
+}
+.contactList,
+.projectsList {
+  color: white;
+  list-style: none;
+  transition: all 0.3s;
+}
+
+.contactList li,
+.projectsList li {
+  padding: 10px;
+  font-size: 120%;
+  font-weight: 100;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 5px;
+}
+.projectsList li:hover {
+  text-decoration: line-through;
+  cursor: pointer;
+  font-size: 150%;
+  transition: all 0.3s;
+}
+.linky {
+  text-decoration-color: none;
+  color: white;
+}
+
+@media (max-width: 780px) {
+  #menuPage {
+    width: 100vw;
+  }
+}
+@media (max-width: 575px) {
+  #menuPage {
+    width: 100vw;
+  }
+}
