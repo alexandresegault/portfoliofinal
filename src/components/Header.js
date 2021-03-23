@@ -23,9 +23,9 @@ const Header = () => {
     handleChange();
   }, [openBurger]);
 
-  const handleClick = () => {
+  function handleClick() {
     setOpenBurger(!openBurger);
-  };
+  }
 
   return (
     <div className="header">
