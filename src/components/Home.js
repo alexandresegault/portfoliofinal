@@ -15,7 +15,7 @@ const Home = prevProps => {
   return (
     <div className="home">
       <div className="containMe">
-        <img src={pictureMe} id="imgMe" />
+        <img src={pictureMe} id="imgMe" alt="" />
         <div id="description">
           <h3 className="mainTitle">Alexandre Segault ,</h3>
           <h4 className="subtitle">Développeur Web & Web Mobile.</h4>

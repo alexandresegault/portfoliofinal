@@ -8,10 +8,6 @@ import imgMinimal from "../img/imgMinimal.png";
 import "./Projects.css";
 
 const Projects = () => {
-  const xUniverse = "https://pedantic-cori-74f717.netlify.app/";
-  const cocktail = "https://gijix.github.io/CodeMeMore-project-1-Cocktail/";
-  const froggydays = "https://savemyfroggydays.netlify.app/";
-
   const [hackatonDescription, setHackatonDescription] = useState(false);
   const [cocktailDescription, setCocktailDescription] = useState(false);
   const [froggyDescription, setFroggyDescription] = useState(false);
